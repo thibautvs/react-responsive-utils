@@ -4,13 +4,9 @@ Responsive utilities for React
 
 ## Setup
 
-Copy the the `lib` folder in your project, typically as a `utils/responsive` folder.
-
-You can also configure the `breakpoints.js` file if you need other values than the default ones.
-
-## Dependencies
-
-You need to install the `debounce` package.
+- Copy the the `lib` folder in your project, typically as a `utils/responsive` folder.
+- Configure the `breakpoints.js` file if you need other values than the default ones.
+- Install the `debounce` package.
 
 ## Use
 
