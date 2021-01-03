@@ -62,8 +62,8 @@ import largeMapSrc from './images/map-large.jpg'
 import smallMapSrc from './images/map-small.jpg'
 
 const Map = () => {
-  const { desktop } = useResponsive()
-  return <img src={desktop ? largeMapSrc : smallMapSrc} alt="Map" />
+  const { isDesktop } = useResponsive()
+  return <img src={isDesktop ? largeMapSrc : smallMapSrc} alt="Map" />
 }
 ```
 
