@@ -16,7 +16,7 @@ There are 2 ways to use the utilities:
 
 This is the typical approach to use the utilities.
 
-```
+```javascript
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { desktop, tablet, mobile } from '../utils/responsive/media-queries'
@@ -37,7 +37,7 @@ const Container = styled.div`
 
 There are also `xxxOnly` utilities to avoid visibility-related boilerplate code:
 
-```
+```javascript
 // Instead of:
 const DesktopContainer = styled.div`
   ${tabletAndMobile(css`
@@ -55,7 +55,7 @@ const DesktopContainer = styled.div`
 
 This approach allows you to use the utilities in an imperative way.
 
-```
+```javascript
 import React from 'react'
 import useResponsive from '../utils/responsive/use-responsive'
 import largeMapSrc from './images/map-large.jpg'
@@ -63,9 +63,7 @@ import smallMapSrc from './images/map-small.jpg'
 
 const Map = () => {
   const { desktop } = useResponsive()
-  return (
-    <img src={desktop ? largeMapSrc : smallMapSrc} alt="Map" />
-  )
+  return <img src={desktop ? largeMapSrc : smallMapSrc} alt="Map" />
 }
 ```
 
